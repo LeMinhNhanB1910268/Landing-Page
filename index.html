@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="root">
+        <!-- <nav class="nav-bar">
+            <div class="logo"></div>
+            <div class="menu-lg">
+                <a href="#">Trang chủ</a>
+                <a href="#">Trang chủ</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Liên hệ</a>
+            </div>
+            
+            <div class="menu-sm">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav> -->
+        <nav class="nav-bar"> 
+            <div class="row"> 
+                    <div class="logo"></div> 
+                    <div class="menu-lg"> 
+                        <a href="#">Trang chủ</a> 
+                        <!-- <a href="#">Trang chủ</a>  -->
+                        <a href="#">Chính sách bảo mật</a> 
+                        <a href="#">Điều khoản sử dụng</a> 
+                        <a href="#">Liên hệ</a> 
+                    </div> 
+                    <div id="Menu" class="menu-sm" style="color: gray;"> 
+                        <i class="fa-solid fa-bars"></i> 
+                    </div> 
+            </div> 
+             
+            <div class="menu-sm-show" style="display: none;"> 
+                <ul> 
+                    <a href="#">Trang chủ</a> 
+                    <a href="#">Chính sách bảo mật</a> 
+                    <a href="#">Điều khoản sử dụng</a> 
+                    <a href="#">Liên hệ</a> 
+                </ul> 
+            </div> 
+        </nav>
+        <div class="baner"> 
+            <div class="left-content">
+                <div class="content">
+                    <div class="title">
+                        <p>MEKONG CONNECTOR <a>AI</a> APPLICATION COMPANY</p>
+                    </div>
+                    <div class="slogan">
+                        Tiên phong cung cấp các giải pháp phần mềm ứng dụng trí tuệ nhân tạo
+                    </div>
+                    <div class="input-group">
+                        <div class="lable">Đăng kí tư vấn</div>
+                        <div class="mail-input">
+                            <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                            <button >Gửi yêu cầu<i class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rigth-content">
+                <div class="circle">
+                    <div class="circle-1">
+                        <div class="circle-2">
+                            <div class="globe">
+                                <!-- <div> -->
+                                    <img class="background-img" src="img/Vector.png" alt="">
+                                    <img class="line" src="img/line1.png" alt="">
+                                <!-- </div> -->
+                                <div class="iphoneX">
+                                    <div class="screen"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text chatbot" ><img src="img/simple-icons_chatbot.svg"></img><p>Chat bot</p></div>
+                        <div class="text robot"><img src="img/bi_robot.svg" alt=""><p>Trợ lý ảo</p></div>
+                        <div class="text auto-marketing"><img src="img/ic_round-auto-graph.svg" alt=""><p>Marketing tự động</p></div>
+                        <div class="text machine-learning"><img src="img/carbon_machine-learning-model.svg" alt=""><p>Huấn luyện máy học</p></div>  
+                        <div class="text auto-offer"><img src="img/nimbus_marketing.svg" alt=""><p>Chào hàng tự động</p></div>
+                        <div class="text comparision"><img src="img/uil_comparison.svg" alt=""><p class="long">Phân tích đối thủ cạnh tranh</p></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="title">
+                <h1>Chúng tôi có gì ?</h1>
+                <h2>Tiên phong cung cấp các giải pháp phần mềm ứng dụng trí tuệ nhân tạo</h2>
+            </div>
+            <div class="body">
+                <div class="row-col">
+                    <div class="item">
+                        <img src="img/simple-icons_chatbot.svg" class="icon"></img>
+                        <div class="content">
+                            <h2>1. Chat bot</h2>
+                            <p>Chat bot CSKH, bán hàng, chat bot phục vụ nội bộ. Huấn luyện chat bot, tích hợp chat bot vào Zalo, Messenger. Chat thử qua Zalo</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/ic_round-auto-graph.svg" class="icon"></img>
+                        <div class="content">
+                            <h2>2. Marketing tự động</h2>
+                            <p>Tự động gửi các chiến dịch Marketing theo lịch, đính kèm các ưu đãi, khuyến mãi. Tính năng nằm trong bộ giải pháp của Auto Seller</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/nimbus_marketing.svg" class="icon"></img>
+                        <div class="content">
+                            <h2>3. Chào hàng tự động</h2>
+                            <p>Tự động gửi chào hàng theo lịch, gửi hàng loạt khách hàng cùng một lúc. Tính năng nằm trong bộ giải pháp của Auto Seller</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/bi_robot.svg" class="icon"></img>
+                        <div class="content">
+                            <h2>4. Trợ lý ảo</h2>
+                            <p>Cung cấp phần mềm trợ lý ảo hổ trợ nhiều lĩnh vực: Marketing, nhân sự, trợ giúp pháp lý, tài chính kế toán. Tất cả gói gọn trong ứng dụng Trợ lý GPT</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/uil_comparison.svg" class="icon"></img>
+                        <div class="content">
+                            <h2>5. Phân tích đối thủ</h2>
+                            <p>Thu thập, thống kê, phân tích, đánh giá cơ hội và mối đe dọa của đối thủ từ đó xây dựng chiến lược cạnh tranh phù hợp. Tính năng nằm trong bộ giải pháp của Trợ lý GPT</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/carbon_machine-learning-model.svg" class="icon"></img>
+                        <div class="content">
+                            <h2>6. Huấn luyện máy học</h2>
+                            <p>Huấn luyện máy học trong chuẩn đoán chất lượng sản phẩm, đọc hiểu các thông tin từ hình ảnh, số liệu. Giải pháp đã được ứng dụng nhận dạng chất lượng bánh Pizza của Pizza4ps, nhận dạng bệnh trên hoa màu ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="component-l-m">
+            <div class="component-l-content">
+                <div class="component-l-content-text">
+                    <div class="component-l-intro-text"><h3>Sản phẩm nổi bật</h3></div>
+                    <div class="component-l-content-title">
+                        <h1>Tích hợp ChatGPT vào Zalo và Messenger</h1>
+                    </div>
+                    <div class="component-l-content-text">
+                        <p>
+                            Chat bot CSKH, bán hàng, chat bot phục vụ nội bộ. Huấn luyện chat bot, tích hợp chat bot vào Zalo, Messenger
+                        </p>
+                    </div>
+                    <div class="component-l-more-info">
+                        <p>Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="component-contact">
+                        <div class="component-contact-text">
+                            <p>Liên hệ</p>
+                        </div>
+                        <div class="component-contact-item">
+                            <button class="btn-contact"><span><a href="#bot">Liên hệ tư vấn</a></span></button>
+                            <button class="seen-demo"><i class="fa-regular fa-circle-play"></i><span>Xem Demo</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="component-l-demo">
+                <div class="box-iphone">
+                </div>
+            </div>
+        </div>
+        <div class="component auto-sell">
+            <div class="component-demo">
+                <div class="component-demo-img">
+                    <img src="./img/Mockup.svg" alt="">
+                </div>
+            </div>
+            <div class="component-content">
+                <div class="component-content-text">
+                    <div class="component-intro-text"><h3>Sản phẩm nổi bật</h3></div>
+                    <div class="component-content-title">
+                        <h1>Auto Seller</h1>
+                    </div>
+                    <div class="component-content-text">
+                        <p>
+                            Marketing tự động, chào hàng tự động, quản lý khuyến mãi, bán hàng ...
+                        </p>
+                    </div>
+                    <div class="component-more-info">
+                        <p>Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="component-contact">
+                        <div class="component-contact-text">
+                            <p>Liên hệ</p>
+                        </div>
+                        <div class="component-contact-item">
+                            <button class="btn-contact"><span><a href="#bot">Liên hệ tư vấn</a></span></button>
+                            <button class="seen-demo"><i class="fa-regular fa-circle-play"></i><span>Xem Demo</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="component-l-m">
+            <div class="component-l-content">
+                <div class="component-l-content-text">
+                    <div class="component-l-intro-text"><h3>Sản phẩm nổi bật</h3></div>
+                    <div class="component-l-content-title">
+                        <h1>Trợ lý GPT</h1>
+                    </div>
+                    <div class="component-l-content-text">
+                        <p>
+                            Hổ trợ viết nội dung, marketing, nhân sự, trợ giúp pháp lý, tài chính kế toán, phân tích đối thủ cạnh tranh và còn vô số tính năng thú vị khác chờ bạn khám phá
+                        </p>
+                    </div>
+                    <div class="component-l-more-info">
+                        <p>Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="get-app">
+                        <div class="get-app-text">
+                            <p>Tải ngay:</p>
+                        </div>
+                        <div class="get-app-item">
+                            <img src="./img/google-play-badge.svg" alt=""> 
+                            <img src="./img/app-store-badge.svg" alt="">
+                            <!-- <i class="fa-brands fa-apple"></i>
+                            <i class="fa-brands fa-android"></i> -->
+                            <button class="seen-demo"><i class="fa-regular fa-circle-play"></i><span>Xem Demo</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="component-l-img">
+                <div class="component-l-img-box">
+                    <div class="img-home">
+                        <img class="img-bg" src="./img/portrait_black.png" alt="">
+                        <img class="img-content" src="./img/mk.png" alt="">
+                    </div>
+                    <div class="img-write">
+                        <img class="img-bg-write" src="./img/portrait_black.png" alt="">
+                        <img class="img-content-write" src="./img/writing.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="component">
+            <div class="component-demo">
+                <div class="component-demo-img">
+                    <img src="./img/pizza.png" alt="">
+                </div>
+            </div>
+            <div class="component-content">
+                <div class="component-content-text">
+                    <div class="component-intro-text"><h3>Sản phẩm nổi bật</h3></div>
+                    <div class="component-content-title">
+                        <h1>Huấn luyện máy học</h1>
+                    </div>
+                    <div class="component-content-text">
+                        <p>
+                            Huyến luyện máy học trong chuẩn đoán chất lượng sản phẩm, đọc hiểu các thông tin từ hình ảnh, số liệu. Giải pháp đã được ứng dụng nhận dạng chất lượng bánh Pizza, nhận dạng bệnh trên hoa màu ...
+                        </p>
+                    </div>
+                    <div class="component-more-info">
+                        <p>Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="component-contact">
+                        <div class="component-contact-text">
+                            <p>Liên hệ</p>
+                        </div>
+                        <div class="component-contact-item">
+                            <button class="btn-contact"><span><a href="#bot">Liên hệ tư vấn</a></span></button>
+                            <button class="seen-demo"><i class="fa-regular fa-circle-play"></i><span>Xem Demo</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="component-l-m">
+            <div class="component-l-content">
+                <div class="component-l-content-text">
+                    <div class="component-l-intro-text"><h3>Sản phẩm nổi bật</h3></div>
+                    <div class="component-l-content-title">
+                        <h1>Agri-Online</h1>
+                    </div>
+                    <div class="component-l-content-text">
+                        <p>
+                            Quản lý thông tin nông dân, ruộng vườn, mùa vụ, thu chi... Áp dụng trí tuệ nhân tạo trong nhận dạng bệnh trên hoa màu, tư vấn phân thuốc sử dụng phù hợp cho từng loại bệnh.
+                        </p>
+                    </div>
+                    <div class="component-l-more-info">
+                        <p>Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="component-contact">
+                        <div class="component-contact-text">
+                            <p>Liên hệ</p>
+                        </div>
+                        <div class="component-contact-item">
+                            <button class="btn-contact"><span><a href="#bot">Liên hệ tư vấn</a></span></button>
+                            <button class="seen-demo"><i class="fa-regular fa-circle-play"></i><span>Xem Demo</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="component-l-demo">
+                <div class="component-l-demo-img">
+                    <img src="./img/Mockup1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="register-contact" id="bot">
+            <div class="bg">
+                <div class="register-contact-img">
+                    <img src="./img/[removal 1.svg" alt="">
+                </div>
+                <div class="register-contact-input">
+                    <div class="register-contact-input-text">
+                        <h2>Đăng ký tư vấn miễn phí</h2>
+                        <p>Tư vấn tận tình 24/7</p>
+                    </div>
+                    <div class="register-contact-input-group">
+                        <div class="register-contact-input-input">
+                            <input type="text" placeholder="Nhập email hoặc số điện thoại">
+                            <button><span>Gửi yêu cầu</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-container-content-1">
+                    <img src="./img/MekongConnector_Full-1 1.png" alt="">
+                    <div class="footer-container-content-title">
+                        <h3>THÔNG TIN CÔNG TY</h3>
+                    </div>
+                    <p>CÔNG TY TNHH CẦU NỐI MEKONG</p>
+                    <p>Địa chỉ: 104 Trần Đại Nghĩa, khóm 4, phường 4, TP. Vĩnh Long, Vĩnh Long</p>
+                    <p>Điện thoại: 0981 825099</p>
+                    <p>Email: info@mekong-connector.com</p>
+                    <p>Website: www.mekong-connector.com</p>
+                    <p>Giấy chứng nhận đăng ký doanh nghiệp số 1501126693 do Sở kế hoạch đầu tư tỉnh Vĩnh Long cấp lần đầu ngày 06/05/2021</p>
+                </div>
+                <div class="footer-container-content-2">
+                    <div class="footer-container-content-title">
+                        <h3>QUY ĐỊNH VỀ CHÍNH SÁCH</h3>
+                    </div>
+                    <p>Điều khoản sử dụng</p>
+                    <p>Chính sách thanh toán</p>
+                    <p>Chính sách bảo mật</p>
+                </div>
+                <div class="footer-container-content-3">
+                    <div class="footer-container-content-title">
+                        <h3>TƯƠNG TÁC MẠNG XÃ HỘI</h3>
+                    </div>
+                    <p>Hãy theo dõi chúng tôi qua Facebook, Youtube để không bỏ lỡ những thông tin mới nhất</p>
+                    <div class="icon-contact">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <img src="./img/logo-bct 1.svg" alt="">
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyright ©2023. All right reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script> 
+    var menu = document.getElementById("Menu") 
+        // console.log(menu) 
+    .addEventListener('click', function (e) { 
+        e.preventDefault(); 
+         var list = document.querySelector(".menu-sm-show").style
+         list.display = 'block';
+        if (list.animation == "0.3s ease-in 0s 1 normal forwards running showmenu") {
+            list.animation = "hidemenu 0.3s forwards";
+        }
+        else {
+            list.animation = "showmenu 0.3s ease-in forwards";
+        }
+    });; 
+    var root = document.getElementById("root")
+    .addEventListener("scroll", function(e){
+        e.preventDefault();
+        var nav = document.querySelector(".nav-bar").style
+        nav.background = "white"
+        if (e.target.scrollTop === 0) {
+            nav.background = "none"
+        }
+       
+      
+    }) 
+        // menu.addEventListener 
+</script>
+</html>
