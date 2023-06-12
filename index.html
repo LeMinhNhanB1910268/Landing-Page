@@ -11,20 +11,6 @@
 </head>
 <body>
     <div id="root">
-        <!-- <nav class="nav-bar">
-            <div class="logo"></div>
-            <div class="menu-lg">
-                <a href="#">Trang chủ</a>
-                <a href="#">Trang chủ</a>
-                <a href="#">Chính sách bảo mật</a>
-                <a href="#">Điều khoản sử dụng</a>
-                <a href="#">Liên hệ</a>
-            </div>
-            
-            <div class="menu-sm">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav> -->
         <nav class="nav-bar"> 
             <div class="row"> 
                     <div class="logo"></div> 
@@ -38,8 +24,7 @@
                     <div id="Menu" class="menu-sm" style="color: gray;"> 
                         <i class="fa-solid fa-bars"></i> 
                     </div> 
-            </div> 
-             
+            </div>
             <div class="menu-sm-show" style="display: none;"> 
                 <ul> 
                     <a href="#">Trang chủ</a> 
@@ -49,7 +34,7 @@
                 </ul> 
             </div> 
         </nav>
-        <div class="baner"> 
+        <div id="Pagetop" class="baner"> 
             <div class="left-content">
                 <div class="content">
                     <div class="title">
@@ -96,7 +81,7 @@
                 <h1>Chúng tôi có gì ?</h1>
                 <h2>Tiên phong cung cấp các giải pháp phần mềm ứng dụng trí tuệ nhân tạo</h2>
             </div>
-            <div class="body">
+            <div class="body fade-in">
                 <div class="row-col">
                     <div class="item">
                         <img src="img/simple-icons_chatbot.svg" class="icon"></img>
@@ -143,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="component-l-m">
+        <div class="component-l-m fade-in">
             <div class="component-l-content">
                 <div class="component-l-content-text">
                     <div class="component-l-intro-text"><h3>Sản phẩm nổi bật</h3></div>
@@ -174,7 +159,7 @@
                 </div>
             </div>
         </div>
-        <div class="component auto-sell">
+        <div class="component auto-sell fade-in">
             <div class="component-demo">
                 <div class="component-demo-img">
                     <img src="./img/Mockup.svg" alt="">
@@ -206,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <div class="component-l-m">
+        <div class="component-l-m fade-in">
             <div class="component-l-content">
                 <div class="component-l-content-text">
                     <div class="component-l-intro-text"><h3>Sản phẩm nổi bật</h3></div>
@@ -221,7 +206,7 @@
                     <div class="component-l-more-info">
                         <p>Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
-                    <div class="get-app">
+                    <div class="get-app fade-in">
                         <div class="get-app-text">
                             <p>Tải ngay:</p>
                         </div>
@@ -235,7 +220,7 @@
                     </div>
                 </div>
             </div>
-            <div class="component-l-img">
+            <div class="component-l-img fade-in">
                 <div class="component-l-img-box">
                     <div class="img-home">
                         <img class="img-bg" src="./img/portrait_black.png" alt="">
@@ -248,7 +233,7 @@
                 </div>
             </div>
         </div>
-        <div class="component">
+        <div class="component fade-in">
             <div class="component-demo">
                 <div class="component-demo-img">
                     <img src="./img/pizza.png" alt="">
@@ -280,7 +265,7 @@
                 </div>
             </div>
         </div>
-        <div class="component-l-m">
+        <div class="component-l-m fade-in">
             <div class="component-l-content">
                 <div class="component-l-content-text">
                     <div class="component-l-intro-text"><h3>Sản phẩm nổi bật</h3></div>
@@ -369,6 +354,7 @@
                 <p>Copyright ©2023. All right reserved</p>
             </div>
         </div>
+        <a type="button" href="#Pagetop" class="PageTop"><i class="fa-solid fa-chevron-up"></i></a>
     </div>
 </body>
 <script> 
@@ -386,16 +372,36 @@
         }
     });; 
     var root = document.getElementById("root")
-    .addEventListener("scroll", function(e){
+    root.addEventListener("scroll", function(e){
         e.preventDefault();
         var nav = document.querySelector(".nav-bar").style
+        var pagetop = document.querySelector(".PageTop").style
+        pagetop.display= "flex"
         nav.background = "white"
         if (e.target.scrollTop === 0) {
             nav.background = "none"
+            pagetop.display= "none"
         }
-       
-      
-    }) 
+    })
+
+    function fadeInOnScroll() {
+        var fadeElements = document.querySelectorAll('.fade-in');
+        function checkFade() {
+            // console.log('a');
+            for (var i = 0; i < fadeElements.length; i++) {
+                
+            var element = fadeElements[i];
+            var position = element.getBoundingClientRect().top;
+            if (position < window.innerHeight) {
+                element.classList.add('show'); // Thêm lớp 'show' để hiển thị
+            }
+            }
+        }
+        root.addEventListener('load', checkFade);
+        root.addEventListener('scroll', checkFade);
+    }
+
+fadeInOnScroll();
         // menu.addEventListener 
 </script>
 </html>
